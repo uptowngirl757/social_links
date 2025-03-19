@@ -62,7 +62,7 @@ main nav .container a {
   display: block;
   text-decoration: none;
   color: hsl(0, 0%, 100%);
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   font-weight: 600;
 }
 .item {
@@ -70,6 +70,20 @@ main nav .container a {
   background-color: hsl(0, 0%, 20%);
   padding: 1rem 0;
   border-radius: 0.5rem;
+  transition: background-color, border 0.3s ease;
+}
+
+.item:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 20%);
+}
+.item:hover a {
+  color: hsl(0, 0%, 20%);
+}
+.item a:focus {
+  outline: none;
+  border: none;
+  text-decoration-line: underline;
 }
 .attribution {
   font-size: 11px;
@@ -82,4 +96,8 @@ main nav .container a {
 }
 .attribution a:hover {
   text-decoration: none;
+}
+.attribution a:focus {
+  outline: none;
+  text-decoration: underline;
 }
