@@ -7,14 +7,79 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: hsl(0, 0%, 8%);
   font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.social-profile {
+  width: 90%;
+  background-color: hsl(0, 0%, 12%);
+  max-width: 380px;
+  padding: 2rem;
+  border-radius: 0.9rem;
+  margin-top: 2.4rem;
+}
+
+.header-container {
+  text-align: center;
+}
+.header-container img {
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.header-container h1 {
+  color: hsl(0, 0%, 100%);
+  margin: 0.5rem 0;
+}
+
+.header-container address {
+  color: hsl(75, 94%, 57%);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.header-container h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 1.3rem 0;
+}
+
+main nav {
+  text-align: center;
+}
+main nav .container {
+  list-style: none;
+}
+main nav .container a {
+  display: block;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.item {
+  margin: 1.5rem 0;
+  background-color: hsl(0, 0%, 20%);
+  padding: 1rem 0;
+  border-radius: 0.5rem;
 }
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 100px;
+  color: #fff;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+.attribution a:hover {
+  text-decoration: none;
 }
